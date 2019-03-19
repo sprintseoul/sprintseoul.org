@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:700|Nunito:400,700');
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:400,700');
+
+* {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #F8F8F8;
+  font-family: "Nunito", "Noto Sans KR", sans-serif;
+  font-size: 1.12rem;
+  color: #393952;
+}
+
+h1, h2, h3 {
+  font-family: "Montserrat", sans-serif;
+  word-break: keep-all;
+}
+
+h1 {
+  font-size: 2.5em;
+}
+
+h2 {
+  font-size: 1.8em;
+}
+
+a {
+  text-decoration: none;
+  color: #2828FF;
+  border-bottom: 1px solid #2828FF;
+}
+
+a:visited {
+  color: #711fb7;
+  border-color: #711fb7;
+}
+
+a:hover {
+  color: #000070;
+  border-color: #000070;
+}
+
+p, blockquote, q {
+  line-height: 1.725;
+  margin: 0 0 1.0em;
+  word-wrap: break-word;
+}
+
+li {
+  line-height: 1.725;
+}
+
+* + h2 {
+  margin-top: 3.5em;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 1em 0;
+}
+
+.wrap {
+  flex: 1;
+  max-width: 960px;
+  margin: 0 3%;
+}
+
+.wrap.multicol {
+  display: flex;
+  justify-content: space-between;
+}
+
+.col {
+  width: 48%;
+}
+
+.title {
+  padding: 4em 0 8em;
+  color: white;
+}
+
+.dotted {
+  background:
+		linear-gradient(rgba(0, 0, 0, 0.5) 1px, rgba(0, 0, 0, 0.25) 0) center,
+    url("/static/images/bg.jpg");
+  background-size: 1px 2px, cover;
+  background-position: center;
+}
+
+.footer {
+  padding: 2em 0;
+  background: #ffc814;
+}
+
+.title .logo {
+  max-width: 100%;
+  width: 800px;
+  height: auto;
+  margin: 3em 0 0;
+}
+
+.title h1 {
+  font-style: italic;
+}
+
+.title h3 {
+  background: #ffc814;
+  color: #114;
+  padding: 1em;
+  display: inline-block;
+}
+
+.content {
+  min-height: 50vh;
+  padding-bottom: 5em;
+}
+
+@media screen and (max-width: 720px) {
+  body {
+    font-size: 1rem;
+  }
+
+  .wrap.multicol {
+    display: block;
+  }
+
+  .col {
+    width: 100%;
+    margin: 0 0 1em;
+  }
+
+  .title,
+  .footer {
+    padding: 1.5em 0;
+  }
+}

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:700|Nunito:400,700');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700|Nunito:400,700');
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:400,700');
 
 * {
@@ -100,9 +100,9 @@ a.pilcrow {
 
 .dotted {
   background:
-		linear-gradient(rgba(0, 0, 0, 0.5) 1px, rgba(0, 0, 0, 0.25) 0) center,
+    url("/static/images/noise.svg"),
     url("/static/images/bg.jpg");
-  background-size: 1px 2px, cover;
+  background-size: auto, cover;
   background-position: center;
 }
 
@@ -127,6 +127,18 @@ a.pilcrow {
   color: #114;
   padding: 1em;
   display: inline-block;
+}
+
+.brandlogo {
+  font-style: italic;
+  font-weight: normal;
+  font-size: 2em;
+  margin: 0;
+}
+
+.brandlogo span:first-child {
+  font-weight: bold;
+  margin-right: 0.1em;
 }
 
 .content {

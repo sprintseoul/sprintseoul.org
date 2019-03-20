@@ -85,6 +85,19 @@ li {
   color: white;
 }
 
+a.pilcrow {
+  visibility: hidden;
+}
+
+h2:hover a.pilcrow,
+h3:hover a.pilcrow {
+  visibility: visible;
+}
+
+a.pilcrow {
+  margin-left: 10px
+}
+
 .dotted {
   background:
 		linear-gradient(rgba(0, 0, 0, 0.5) 1px, rgba(0, 0, 0, 0.25) 0) center,

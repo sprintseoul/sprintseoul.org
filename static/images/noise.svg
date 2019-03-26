@@ -10,6 +10,6 @@
               stitchTiles='stitch'/>
     </filter>
 
-    <rect width='300' height='300' fill='#000' opacity='0.18'/>
+    <rect width='300' height='300' fill='#000' opacity='0.25'/>
     <rect width='300' height='300' filter="url(#n)" opacity='0.32'/>
 </svg>

@@ -1,0 +1,18 @@
+.title {
+  padding: 8em 0 4em;
+}
+
+.dotted {
+  background:
+    url("/static/images/bg-201906.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.footer {
+  background: #14ffa8;
+}
+
+.title h3 {
+  background: #14ffa8;
+}

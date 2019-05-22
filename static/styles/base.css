@@ -81,7 +81,7 @@ li {
 }
 
 .title {
-  padding: 8em 0 4em;
+  padding: 4em 0 8em;
   color: white;
 }
 
@@ -99,15 +99,12 @@ a.pilcrow {
 }
 
 .dotted {
-  background:
-    url("/static/images/bg-201906.jpg");
-  background-size: cover;
-  background-position: center;
+  background: #999;
 }
 
 .footer {
   padding: 2em 0;
-  background: #14ffa8;
+  background: #ffc814;
 }
 
 .title .logo {
@@ -122,7 +119,7 @@ a.pilcrow {
 }
 
 .title h3 {
-  background: #14ffa8;
+  background: #ffc814;
   color: #114;
   padding: 1em;
   display: inline-block;

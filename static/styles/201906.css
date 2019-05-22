@@ -15,4 +15,42 @@
 
 .title h3 {
   background: #14ffa8;
+  border-radius: 8px;
+}
+
+.projects {
+  padding: 0;
+}
+
+.projects h4 {
+  font-size: 1.4em;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+}
+
+.projects li {
+  display: block;
+  list-style: none;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin: 0.5em 0;
+  padding: 1em;
+  background: #fff;
+}
+
+.projects p {
+  margin: 0.5em 0;
+}
+
+.label {
+  font-size: 0.8em;
+  padding: 0.1em 0.5em;
+  margin-right: 0.2em;
+  background: #14ffa8;
+  border-radius: 5px;
+}
+
+.pull-right {
+  float: right;
 }

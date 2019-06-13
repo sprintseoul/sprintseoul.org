@@ -1,7 +1,0 @@
-.dotted {
-  background:
-    url("/static/images/noise.svg"),
-    url("/static/images/bg-201904.jpg");
-  background-size: auto, cover;
-  background-position: center;
-}

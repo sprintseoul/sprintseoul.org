@@ -9,10 +9,6 @@ import Seo from "../components/Seo";
 class IndexPage extends React.Component {
   separator = React.createRef();
 
-  scrollToContent = e => {
-    this.separator.current.scrollIntoView({ block: "start", behavior: "smooth" });
-  };
-
   render() {
     const {
       data: {
@@ -42,7 +38,7 @@ class IndexPage extends React.Component {
       <React.Fragment>
         <ThemeContext.Consumer>
           {theme => (
-            <Hero scrollToContent={this.scrollToContent} backgrounds={backgrounds} theme={theme} />
+            <Hero backgrounds={backgrounds} theme={theme} />
           )}
         </ThemeContext.Consumer>
 

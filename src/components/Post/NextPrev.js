@@ -67,7 +67,7 @@ const NextPrev = props => {
         }
 
         h4 {
-          font-weight: 600;
+          font-weight: 700;
           margin: 0;
           font-size: 1.1em;
         }

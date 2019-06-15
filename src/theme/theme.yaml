@@ -66,11 +66,11 @@ color:
 font:
   # font options
   family:
-    initial: 'Arial, sans-serif'
-    target: &font-family-target 'Open Sans'
+    initial: '"Noto Sans KR", Arial, sans-serif'
+    target: &font-family-target 'Noto Sans KR'
   weight:
     standard: 400
-    bold: 600
+    bold: 700
   size:
     xxs: &font-size-xs .8em
     xs: &font-size-xs .95em
@@ -123,7 +123,7 @@ heading:
     h1: *font-line-height-xs
     h2: *font-line-height-xs
     h3: *font-line-height-xs
-  weight: 600
+  weight: 700
 line:
   color: *color-gray-3
 icon:

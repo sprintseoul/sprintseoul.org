@@ -7,7 +7,7 @@ module.exports = ctx => ({
       }
     },
     "postcss-text-remove-gap": {
-      defaultFontFamily: "Open Sans",
+      defaultFontFamily: "Noto Sans KR",
       defaultLineHeight: "0"
     },
     "postcss-nested": {},

@@ -40,8 +40,7 @@ exports.createPages = ({ graphql, actions }) => {
 
   return new Promise((resolve, reject) => {
     const postTemplate = path.resolve("./src/templates/PostTemplate.js");
-    const pageTemplate = path.resolve("./src/templates/PageTemplate.js");
-    const categoryTemplate = path.resolve("./src/templates/CategoryTemplate.js");
+    const sprintTemplate = path.resolve("./src/templates/SprintTemplate.js");
 
     // Do not create draft post files in production.
     let activeEnv = process.env.ACTIVE_ENV || process.env.NODE_ENV || "development"
@@ -97,14 +96,22 @@ exports.createPages = ({ graphql, actions }) => {
           }
         });
 
-        // Create category pages
-        const categoryList = Array.from(categorySet);
-        categoryList.forEach(category => {
+        // Create sprints
+        const sprints = items.filter(item => item.node.fields.source === "sprints");
+        sprints.forEach(({ node }, index) => {
+          const slug = node.fields.slug;
+          const next = index === 0 ? undefined : sprints[index - 1].node;
+          const prev = index === sprints.length - 1 ? undefined : sprints[index + 1].node;
+          const source = node.fields.source;
+
           createPage({
-            path: `/category/${_.kebabCase(category)}/`,
-            component: categoryTemplate,
+            path: slug,
+            component: sprintTemplate,
             context: {
-              category
+              slug,
+              prev,
+              next,
+              source
             }
           });
         });
@@ -124,22 +131,6 @@ exports.createPages = ({ graphql, actions }) => {
               slug,
               prev,
               next,
-              source
-            }
-          });
-        });
-
-        // and pages.
-        const pages = items.filter(item => item.node.fields.source === "pages");
-        pages.forEach(({ node }) => {
-          const slug = node.fields.slug;
-          const source = node.fields.source;
-
-          createPage({
-            path: slug,
-            component: pageTemplate,
-            context: {
-              slug,
               source
             }
           });

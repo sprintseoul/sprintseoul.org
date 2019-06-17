@@ -3,21 +3,22 @@ import React from "react";
 
 import Item from "./Item";
 
-const Blog = props => {
-  const { posts, theme } = props;
+const Upcoming = props => {
+  const { sprints, theme } = props;
 
   return (
     <React.Fragment>
       <main className="main">
+        <h1>다음 스프린트</h1>
         <ul>
-          {posts.map(post => {
+          {sprints.map(sprint => {
             const {
               node,
               node: {
                 fields: { slug }
               }
-            } = post;
-            return <Item key={slug} post={node} theme={theme} />;
+            } = sprint;
+            return <Item key={slug} sprint={node} theme={theme} />;
           })}
         </ul>
       </main>
@@ -28,10 +29,15 @@ const Blog = props => {
           padding: 0 ${theme.space.inset.default};
         }
 
+        h1 {
+          margin: 0 auto;
+          padding: ${`calc(${theme.space.default} * 2) 0 calc(${theme.space.default} * 0.5)`};
+        }
+
         ul {
           list-style: none;
           margin: 0 auto;
-          padding: ${`calc(${theme.space.default} * 1.5) 0 calc(${theme.space.default} * 0.5)`};
+          padding: ${`calc(${theme.space.default} * 0.5) 0 calc(${theme.space.default} * 0.5)`};
         }
 
         @above tablet {
@@ -43,6 +49,10 @@ const Blog = props => {
           }
         }
         @above desktop {
+          h1 {
+            max-width: ${theme.text.maxWidth.desktop};
+          }
+
           ul {
             max-width: ${theme.text.maxWidth.desktop};
           }
@@ -52,9 +62,9 @@ const Blog = props => {
   );
 };
 
-Blog.propTypes = {
-  posts: PropTypes.array.isRequired,
+Upcoming.propTypes = {
+  sprints: PropTypes.array.isRequired,
   theme: PropTypes.object.isRequired
 };
 
-export default Blog;
+export default Upcoming;

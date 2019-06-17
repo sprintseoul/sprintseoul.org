@@ -2,8 +2,9 @@ import PropTypes from "prop-types";
 import React from "react";
 import { graphql } from "gatsby";
 import { ThemeContext } from "../layouts";
-import Blog from "../components/Blog";
 import Hero from "../components/Hero";
+import Upcoming from "../components/Upcoming";
+import Past from "../components/Past";
 import Seo from "../components/Seo";
 
 class IndexPage extends React.Component {
@@ -12,7 +13,8 @@ class IndexPage extends React.Component {
   render() {
     const {
       data: {
-        posts: { edges: posts = [] },
+        upcoming: { edges: upcoming = [] },
+        past: { edges: past = [] },
         bgDesktop: {
           resize: { src: desktop }
         },
@@ -37,15 +39,19 @@ class IndexPage extends React.Component {
     return (
       <React.Fragment>
         <ThemeContext.Consumer>
-          {theme => (
-            <Hero backgrounds={backgrounds} theme={theme} />
-          )}
+          {theme => (<Hero backgrounds={backgrounds} theme={theme} />)}
         </ThemeContext.Consumer>
 
         <hr ref={this.separator} />
 
         <ThemeContext.Consumer>
-          {theme => <Blog posts={posts} theme={theme} />}
+          {theme => <Upcoming sprints={upcoming} theme={theme} />}
+        </ThemeContext.Consumer>
+
+        <hr ref={this.separator} />
+
+        <ThemeContext.Consumer>
+          {theme => <Past sprints={past} theme={theme} />}
         </ThemeContext.Consumer>
 
         <Seo facebook={facebook} />
@@ -70,12 +76,16 @@ export default IndexPage;
 //eslint-disable-next-line no-undef
 export const query = graphql`
   query IndexQuery {
-    posts: allMarkdownRemark(
-      filter: { fileAbsolutePath: { regex: "//posts/[0-9]+.*--/" } }
+    upcoming: allMarkdownRemark(
+      filter: {
+        fileAbsolutePath: { regex: "//sprints/[0-9]+.*/" }
+        frontmatter: { category: { eq: "upcoming" } }
+      }
       sort: { fields: [fields___prefix], order: DESC }
     ) {
       edges {
         node {
+          html
           excerpt
           fields {
             slug
@@ -84,16 +94,28 @@ export const query = graphql`
           frontmatter {
             title
             category
-            author
-            cover {
-              children {
-                ... on ImageSharp {
-                  fluid(maxWidth: 800, maxHeight: 360) {
-                    ...GatsbyImageSharpFluid_withWebp
-                  }
-                }
-              }
-            }
+          }
+        }
+      }
+    }
+    past: allMarkdownRemark(
+      filter: {
+        fileAbsolutePath: { regex: "//sprints/[0-9]+.*/" }
+        frontmatter: { category: { eq: "past" } }
+      }
+      sort: { fields: [fields___prefix], order: DESC }
+    ) {
+      edges {
+        node {
+          html
+          excerpt
+          fields {
+            slug
+            prefix
+          }
+          frontmatter {
+            title
+            category
           }
         }
       }

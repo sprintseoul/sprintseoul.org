@@ -10,9 +10,11 @@ const Bodytext = props => {
 
       <style jsx>{`
         .bodytext {
+          padding: 0 1em 0 1em;
           animation-name: bodytextEntry;
           animation-duration: ${theme.time.duration.long};
 
+          :global(h1),
           :global(h2),
           :global(h3) {
             margin: 1.5em 0 1em;

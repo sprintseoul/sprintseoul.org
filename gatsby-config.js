@@ -76,15 +76,15 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/content/posts/`,
-        name: "posts"
+        path: `${__dirname}/content/sprints/`,
+        name: "sprints"
       }
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/content/pages/`,
-        name: "pages"
+        path: `${__dirname}/content/posts/`,
+        name: "posts"
       }
     },
     {

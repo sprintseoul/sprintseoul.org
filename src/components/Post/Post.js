@@ -30,7 +30,7 @@ const Post = props => {
     showFooter = true
   } = props;
 
-  let header
+  let header;
   let footer;
 
   if (showHeader) {

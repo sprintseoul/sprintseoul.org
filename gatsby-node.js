@@ -39,7 +39,6 @@ exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions;
 
   return new Promise((resolve, reject) => {
-    const postTemplate = path.resolve("./src/templates/PostTemplate.js");
     const sprintTemplate = path.resolve("./src/templates/SprintTemplate.js");
 
     // Do not create draft post files in production.
@@ -107,26 +106,6 @@ exports.createPages = ({ graphql, actions }) => {
           createPage({
             path: slug,
             component: sprintTemplate,
-            context: {
-              slug,
-              prev,
-              next,
-              source
-            }
-          });
-        });
-
-        // Create posts
-        const posts = items.filter(item => item.node.fields.source === "posts");
-        posts.forEach(({ node }, index) => {
-          const slug = node.fields.slug;
-          const next = index === 0 ? undefined : posts[index - 1].node;
-          const prev = index === posts.length - 1 ? undefined : posts[index + 1].node;
-          const source = node.fields.source;
-
-          createPage({
-            path: slug,
-            component: postTemplate,
             context: {
               slug,
               prev,

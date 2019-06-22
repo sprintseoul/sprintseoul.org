@@ -5,6 +5,7 @@ import { ThemeContext } from "../layouts";
 import Hero from "../components/Hero";
 import Upcoming from "../components/Upcoming";
 import Past from "../components/Past";
+import Guide from "../components/Guide";
 import Seo from "../components/Seo";
 
 class IndexPage extends React.Component {
@@ -15,6 +16,8 @@ class IndexPage extends React.Component {
       data: {
         upcoming: { edges: upcoming = [] },
         past: { edges: past = [] },
+        guide: { html: guideHTML },
+        projects: { html: projectListHTML },
         bgDesktop: {
           resize: { src: desktop }
         },
@@ -51,6 +54,12 @@ class IndexPage extends React.Component {
         <hr ref={this.separator} />
 
         <ThemeContext.Consumer>
+          {theme => <Guide guide={guideHTML} projectList={projectListHTML} theme={theme} />}
+        </ThemeContext.Consumer>
+
+        <hr ref={this.separator} />
+
+        <ThemeContext.Consumer>
           {theme => <Past sprints={past} theme={theme} />}
         </ThemeContext.Consumer>
 
@@ -81,7 +90,7 @@ export const query = graphql`
         fileAbsolutePath: { regex: "//sprints/[0-9]+.*/" }
         frontmatter: { category: { eq: "upcoming" } }
       }
-      sort: { fields: [fields___prefix], order: DESC }
+      sort: { fields: [fields___slug], order: ASC }
     ) {
       edges {
         node {
@@ -103,7 +112,7 @@ export const query = graphql`
         fileAbsolutePath: { regex: "//sprints/[0-9]+.*/" }
         frontmatter: { category: { eq: "past" } }
       }
-      sort: { fields: [fields___prefix], order: DESC }
+      sort: { fields: [fields___slug], order: DESC }
     ) {
       edges {
         node {
@@ -119,6 +128,14 @@ export const query = graphql`
           }
         }
       }
+    }
+    guide: markdownRemark(fileAbsolutePath: { regex: "/guide/" }) {
+      id
+      html
+    }
+    projects: markdownRemark(fileAbsolutePath: { regex: "/project-list/" }) {
+      id
+      html
     }
     site {
       siteMetadata {

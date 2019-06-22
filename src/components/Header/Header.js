@@ -3,9 +3,7 @@ import PropTypes from "prop-types";
 import React from "react";
 import VisibilitySensor from "react-visibility-sensor";
 
-import { ScreenWidthContext, FontLoadedContext } from "../../layouts";
 import config from "../../../content/meta/config";
-import Menu from "../Menu";
 
 import logo from "../../images/gif/logo.gif";
 
@@ -44,22 +42,6 @@ class Header extends React.Component {
               <h1>{config.headerTitle}</h1>
             </div>
           </Link>
-          <FontLoadedContext.Consumer>
-            {loaded => (
-              <ScreenWidthContext.Consumer>
-                {width => (
-                  <Menu
-                    path={path}
-                    fixed={fixed}
-                    screenWidth={width}
-                    fontLoaded={loaded}
-                    pages={pages}
-                    theme={theme}
-                  />
-                )}
-              </ScreenWidthContext.Consumer>
-            )}
-          </FontLoadedContext.Consumer>
         </header>
         <VisibilitySensor onChange={this.visibilitySensorChange}>
           <div className="sensor" />

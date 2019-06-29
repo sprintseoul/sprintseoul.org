@@ -39,17 +39,24 @@ class IndexPage extends React.Component {
       mobile
     };
 
+    const showUpcoming = (sprints) => {
+      if (sprints.length > 0) {
+        return (
+          <ThemeContext.Consumer>
+            {theme => <Upcoming sprints={upcoming} theme={theme} />}
+          </ThemeContext.Consumer>
+        );
+      }
+      return;
+    };
+
     return (
       <React.Fragment>
         <ThemeContext.Consumer>
           {theme => (<Hero backgrounds={backgrounds} theme={theme} />)}
         </ThemeContext.Consumer>
 
-        <hr ref={this.separator} />
-
-        <ThemeContext.Consumer>
-          {theme => <Upcoming sprints={upcoming} theme={theme} />}
-        </ThemeContext.Consumer>
+        {showUpcoming(upcoming)}
 
         <hr ref={this.separator} />
 

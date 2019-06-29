@@ -27,6 +27,9 @@ title: project
   **[django-summernote](https://github.com/summernote/django-summernote)**
   Simply integrate Summernote editor with Django project.
 
+* **[Gitcoin](https://gitcoin.co/)**
+  깃코인은 보상을 받으며 오픈소스 기여를 할 수 있게 해주는 이더리움 앱입니다.
+
 * <span>TypeScript</span>
   **[just-news](https://github.com/disjukr/just-news)**
   뉴스 사이트 기사 페이지에 접속하면 뉴스 본문외의 정보를 전부 제거한 뒤 페이지를 재구성하는 스크립트입니다. 

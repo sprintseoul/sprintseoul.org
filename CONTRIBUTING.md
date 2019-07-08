@@ -26,4 +26,4 @@ $ npm run develop
 
 ## Connect to the site
 
-Run your browser and connect to `http://localhost:8000/`.
+Run your browser and connect to <http://localhost:8000/>.

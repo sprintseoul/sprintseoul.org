@@ -60,6 +60,10 @@ color:
     lightActive: '#709425'
     dark: '#709425'
     darkActive: '#709425'
+  standard:
+    link: '#2828FF'
+    hover: '#000070'
+    visited: '#711fb7'
   special:
     attention: &color-special-attention orange
 # FONT
@@ -111,8 +115,8 @@ text:
   lineHeight:
     default: *font-line-height-l
   maxWidth:
-    tablet: 650px
-    desktop: 700px
+    tablet: 640px
+    desktop: 760px
 heading:
   family: *font-family-target
   size:

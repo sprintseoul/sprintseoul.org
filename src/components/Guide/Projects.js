@@ -16,27 +16,6 @@ const Projects = props => {
         .projectList {
           padding: 0 1em 0 1em;
 
-          :global(h1),
-          :global(h2),
-          :global(h3) {
-            margin: 1.5em 0 1em;
-          }
-
-          :global(h2) {
-            line-height: ${theme.font.lineHeight.s};
-            font-size: ${theme.font.size.l};
-          }
-
-          :global(h3) {
-            font-size: ${theme.font.size.m};
-            line-height: ${theme.font.lineHeight.m};
-          }
-
-          :global(p) {
-            font-size: ${theme.font.size.s};
-            line-height: ${theme.font.lineHeight.xxl};
-            margin: 0 0 1.5em;
-          }
           :global(ul) {
             list-style: none;
             margin: 0 0 1.5em;

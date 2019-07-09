@@ -6,11 +6,10 @@ module.exports = {
   siteUrl: "https://sprintseoul.org",
   pathPrefix: "",
   siteImage: "preview.jpg",
-  siteLanguage: "en",
+  siteLanguage: "ko",
 
   /* author */
-  authorName: "greg lobinski",
-  authorTwitterAccount: "greglobinski",
+  authorName: "SprintSeoul",
 
   /* info */
   headerTitle: "SprintSeoul",
@@ -32,8 +31,7 @@ module.exports = {
 
   // social
   authorSocialLinks: [
-    { name: "github", url: "https://github.com/greglobinski" },
-    { name: "twitter", url: "https://twitter.com/greglobinski" },
-    { name: "facebook", url: "http://facebook.com/greglobinski" }
+    { name: "github", url: "https://github.com/sprintseoul" },
+    { name: "facebook", url: "https://www.facebook.com/groups/sprintseoul" }
   ]
 };

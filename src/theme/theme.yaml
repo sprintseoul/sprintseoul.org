@@ -54,16 +54,16 @@ color:
       k: '#2b2826'
     black: '#000000'
   brand:
-    primary: &color-brand-primary '#709425'
-    primaryActive: '#709425'
-    light: '#709425'
-    lightActive: '#709425'
-    dark: '#709425'
-    darkActive: '#709425'
+    primary: &color-brand-primary '#14FFA8'
+    primaryActive: '#14FFA8'
+    light: '#14FFA8'
+    lightActive: '#14FFA8'
+    dark: '#14FFA8'
+    darkActive: '#14FFA8'
   standard:
     link: '#2828FF'
     hover: '#000070'
-    visited: '#711fb7'
+    visited: '#711FB7'
   special:
     attention: &color-special-attention orange
 # FONT

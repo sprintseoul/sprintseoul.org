@@ -13,6 +13,7 @@ const Bodytext = props => {
           padding: 0 1em 0 1em;
           animation-name: bodytextEntry;
           animation-duration: ${theme.time.duration.long};
+          word-break: break-word;
         }
 
         @keyframes bodytextEntry {

@@ -1,6 +1,6 @@
 ---
 title: 2019년 6월 스프린트 모임
-category: "past"
+category: "upcoming"
 ---
 
 # 언제, 어디서 하나요?

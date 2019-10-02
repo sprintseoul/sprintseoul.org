@@ -2,8 +2,6 @@ import React from "react";
 import PropTypes from "prop-types";
 import Logo from "../../images/svg/sprintseoul-bw.svg";
 
-console.log(Logo);
-
 const Hero = props => {
   const { backgrounds, theme } = props;
 

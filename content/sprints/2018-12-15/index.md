@@ -1,6 +1,9 @@
 ---
 title: 2018년 12월 스프린트 모임
 category: "past"
+redirect_from:
+    - /201812/
+    - /201812
 ---
 
 # 언제, 어디서 하나요?
@@ -14,6 +17,6 @@ category: "past"
 - https://github.com/django/django/pull/10756
 - https://github.com/django/django/pull/10757
 - https://github.com/django/django/pull/10758
-  
+
 ## Pandas
 - https://github.com/pandas-dev/pandas/issues/24233

@@ -238,6 +238,8 @@ module.exports = {
       options: {
         include: /svg-icons/
       }
-    }
+    },
+    'gatsby-redirect-from',
+    'gatsby-plugin-meta-redirect',
   ]
 };

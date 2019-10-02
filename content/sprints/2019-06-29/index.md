@@ -12,16 +12,6 @@ category: "past"
 
 📅 사용중인 캘린더에 일정을 추가해 보세요. [ICS 파일 다운로드](./sprintseoul-2019-06.ics)
 
-<div title="캘린더에 일정 추가하기" class="addeventatc" style="visibility:hidden">
-  캘린더에 일정 추가하기
-  <span class="start">2019-06-29 10:00 AM</span>
-  <span class="end">2019-06-29 06:00 PM</span>
-  <span class="timezone">Asia/Seoul</span>
-  <span class="title">스프린트서울</span>
-  <span class="description">스프린트서울 6월 스프린트 모임</span>
-  <span class="location">서울시 강남구 테헤란로 127, 4층</span>
-</div>
-
 # 함께 해요!
 스프린트서울에서 6월 스프린트 모임을 준비 중입니다.
 

@@ -9,7 +9,6 @@ const Upcoming = props => {
   return (
     <React.Fragment>
       <main className="main">
-        <h1>다음 스프린트</h1>
         <ul>
           {sprints.map(sprint => {
             const {
@@ -29,11 +28,6 @@ const Upcoming = props => {
           padding: 0 ${theme.space.inset.default};
         }
 
-        h1 {
-          margin: 0 auto;
-          padding: ${`calc(${theme.space.default} * 2) 0 calc(${theme.space.default} * 0.5)`};
-        }
-
         ul {
           list-style: none;
           margin: 0 auto;
@@ -49,10 +43,6 @@ const Upcoming = props => {
           }
         }
         @above desktop {
-          h1 {
-            max-width: ${theme.text.maxWidth.desktop};
-          }
-
           ul {
             max-width: ${theme.text.maxWidth.desktop};
           }

@@ -11,6 +11,9 @@ const Item = props => {
     sprint,
     sprint: {
       html,
+      frontmatter: {
+        title
+      },
       excerpt,
       fields: { slug }
     }
@@ -18,7 +21,20 @@ const Item = props => {
 
   return (
     <React.Fragment>
+      <Link to={slug} key={slug} className="link"><h1>{title}</h1></Link>
       <Post post={sprint} theme={theme} showHeader={false} showFooter={false} />
+      {/* --- STYLES --- */}
+      <style jsx>{`
+        .main {
+          padding: 0 ${theme.space.inset.default};
+        }
+
+        h1 {
+          font-size: ${theme.font.size.xxl};
+          margin: 0 auto;
+          padding: ${`calc(${theme.space.default} * 2) 0 calc(${theme.space.default} * 0.5)`};
+        }
+      `}</style>
     </React.Fragment>
   );
 };

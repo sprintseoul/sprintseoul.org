@@ -1,6 +1,9 @@
 ---
 title: 2019년 10월 스프린트 모임
 category: "upcoming"
+redirect_from:
+    - /201910/
+    - /201910
 ---
 
 # 언제, 어디서 하나요?
@@ -19,7 +22,7 @@ category: "upcoming"
 
 오픈소스 기여자와 함께 재미있는 스프린트를 경험해보고 싶은 분들의 많은 참여 부탁드립니다.
 
-[✍️ 스프린트 참가 신청 (구글 폼)](https://forms.gle/DHjbhgpWz9QgzpFo8)
+[✍️ 스프린트 참가 신청 (구글 폼)](https://forms.gle/3Ly3Ti7JXWCciXrK7)
 
 **10월 18일 마감!**
 

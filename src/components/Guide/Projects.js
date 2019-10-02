@@ -59,7 +59,7 @@ const Projects = props => {
 };
 
 Projects.propTypes = {
-  projects: PropTypes.array.isRequired,
+  projects: PropTypes.string.isRequired,
   theme: PropTypes.object.isRequired
 };
 

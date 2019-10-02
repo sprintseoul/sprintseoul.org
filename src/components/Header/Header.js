@@ -26,7 +26,7 @@ class Header extends React.Component {
   };
 
   render() {
-    const { pages, path, theme } = this.props;
+    const { path, theme } = this.props;
     const { fixed } = this.state;
 
     return (
@@ -97,7 +97,6 @@ class Header extends React.Component {
 }
 
 Header.propTypes = {
-  pages: PropTypes.array.isRequired,
   path: PropTypes.string.isRequired,
   theme: PropTypes.object.isRequired
 };

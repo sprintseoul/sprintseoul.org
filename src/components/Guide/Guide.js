@@ -38,8 +38,8 @@ const Guide = props => {
 };
 
 Guide.propTypes = {
-  guide: PropTypes.array.isRequired,
-  projectList: PropTypes.array.isRequired,
+  guide: PropTypes.string.isRequired,
+  projectList: PropTypes.string.isRequired,
   theme: PropTypes.object.isRequired
 };
 

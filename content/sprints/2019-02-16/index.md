@@ -1,6 +1,9 @@
 ---
 title: 2019년 2월 스프린트 모임
 category: "past"
+redirect_from:
+    - /201902/
+    - /201902
 ---
 
 # 언제, 어디서 하나요?
@@ -26,15 +29,15 @@ category: "past"
 - https://github.com/neutronX/django-markdownx/pull/148
 - https://github.com/neutronX/django-markdownx/pull/149
 - https://github.com/neutronX/django-markdownx/pull/150
-  
+
 ## mocha
 - https://github.com/mochajs/mocha/pull/3733
 - https://github.com/mochajs/mocha/pull/3734
 - https://github.com/mochajs/mocha/pull/3735
- 
+
 ## mocha-docdash
 - https://github.com/mochajs/mocha-docdash/pull/2
-  
+
 ## JSDoc
 - https://github.com/jsdoc3/jsdoc/pull/1617
 

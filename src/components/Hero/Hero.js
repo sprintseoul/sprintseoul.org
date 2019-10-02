@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import Logo from "../../images/svg/sprintseoul-bw.svg";
 
 const Hero = props => {
-  const { backgrounds, theme } = props;
+  const { background, theme } = props;
 
   return (
     <React.Fragment>
@@ -19,8 +19,9 @@ const Hero = props => {
         .hero {
           align-items: center;
           background: ${theme.hero.background};
-          background-image: url(${backgrounds.mobile});
+          background-image: url(${background});
           background-size: cover;
+          background-position: center;
           display: flex;
           flex-flow: column nowrap;
           justify-content: center;
@@ -38,25 +39,13 @@ const Hero = props => {
           font-style: italic;
           margin-top: 20px;
         }
-
-        @from-width tablet {
-          .hero {
-            background-image: url(${backgrounds.tablet});
-          }
-        }
-
-        @from-width desktop {
-          .hero {
-            background-image: url(${backgrounds.desktop});
-          }
-        }
       `}</style>
     </React.Fragment>
   );
 };
 
 Hero.propTypes = {
-  backgrounds: PropTypes.object.isRequired,
+  background: PropTypes.string.isRequired,
   theme: PropTypes.object.isRequired
 };
 

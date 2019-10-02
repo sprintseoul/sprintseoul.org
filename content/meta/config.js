@@ -33,5 +33,7 @@ module.exports = {
   authorSocialLinks: [
     { name: "github", url: "https://github.com/sprintseoul" },
     { name: "facebook", url: "https://www.facebook.com/groups/sprintseoul" }
-  ]
+  ],
+
+  authorTwitterAccount: "sprintseoul",
 };

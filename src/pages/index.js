@@ -18,26 +18,12 @@ class IndexPage extends React.Component {
         past: { edges: past = [] },
         guide: { html: guideHTML },
         projects: { html: projectListHTML },
-        bgDesktop: {
-          resize: { src: desktop }
-        },
-        bgTablet: {
-          resize: { src: tablet }
-        },
-        bgMobile: {
-          resize: { src: mobile }
-        },
+        background: { resize: { src: background } },
         site: {
           siteMetadata: { facebook }
         }
       }
     } = this.props;
-
-    const backgrounds = {
-      desktop,
-      tablet,
-      mobile
-    };
 
     const showUpcoming = (sprints) => {
       if (sprints.length > 0) {
@@ -53,7 +39,7 @@ class IndexPage extends React.Component {
     return (
       <React.Fragment>
         <ThemeContext.Consumer>
-          {theme => (<Hero backgrounds={backgrounds} theme={theme} />)}
+          {theme => (<Hero background={background} theme={theme} />)}
         </ThemeContext.Consumer>
 
         {showUpcoming(upcoming)}
@@ -151,18 +137,8 @@ export const query = graphql`
         }
       }
     }
-    bgDesktop: imageSharp(fluid: { originalName: { regex: "/hero-background/" } }) {
-      resize(width: 1200, quality: 90, cropFocus: CENTER) {
-        src
-      }
-    }
-    bgTablet: imageSharp(fluid: { originalName: { regex: "/hero-background/" } }) {
-      resize(width: 800, height: 1100, quality: 90, cropFocus: CENTER) {
-        src
-      }
-    }
-    bgMobile: imageSharp(fluid: { originalName: { regex: "/hero-background/" } }) {
-      resize(width: 450, height: 850, quality: 90, cropFocus: CENTER) {
+    background: imageSharp(fluid: { originalName: { regex: "/hero-background/" } }) {
+      resize(width: 1200, quality: 60, cropFocus: CENTER) {
         src
       }
     }

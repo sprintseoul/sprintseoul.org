@@ -1,79 +1,17 @@
-import "typeface-noto-sans-kr";
-import FontFaceObserver from "fontfaceobserver";
 import PropTypes from "prop-types";
 import React from "react";
 import { graphql, StaticQuery } from "gatsby";
 
-import { getScreenWidth, timeoutThrottlerHandler } from "../utils/helpers";
 import Footer from "../components/Footer/";
 import Header from "../components/Header";
+import theme from "../theme/theme.yaml";
 
 export const ThemeContext = React.createContext(null);
-export const ScreenWidthContext = React.createContext(0);
-export const FontLoadedContext = React.createContext(false);
-
-import themeObjectFromYaml from "../theme/theme.yaml";
 
 class Layout extends React.Component {
   constructor() {
     super();
-
-    this.state = {
-      font400loaded: false,
-      font700loaded: false,
-      screenWidth: 0,
-      headerMinimized: false,
-      theme: themeObjectFromYaml
-    };
-
-    if (typeof window !== `undefined`) {
-      this.loadFont("font400", "Noto Sans KR", 400);
-      this.loadFont("font700", "Noto Sans KR", 700);
-    }
   }
-
-  timeouts = {};
-
-  componentDidMount() {
-    this.setState({
-      screenWidth: getScreenWidth()
-    });
-    if (typeof window !== "undefined") {
-      window.addEventListener("resize", this.resizeThrottler, false);
-    }
-  }
-
-  resizeThrottler = () => {
-    return timeoutThrottlerHandler(this.timeouts, "resize", 100, this.resizeHandler);
-  };
-
-  resizeHandler = () => {
-    this.setState({ screenWidth: getScreenWidth() });
-  };
-
-  isHomePage = () => {
-    if (this.props.location.pathname === "/") {
-      return true;
-    }
-
-    return false;
-  };
-
-  loadFont = (name, family, weight) => {
-    const font = new FontFaceObserver(family, {
-      weight: weight
-    });
-
-    font.load(null, 10000).then(
-      () => {
-        console.log(`${name} is available`);
-        this.setState({ [`${name}loaded`]: true });
-      },
-      () => {
-        console.log(`${name} is not available`);
-      }
-    );
-  };
 
   render() {
     return (
@@ -93,65 +31,76 @@ class Layout extends React.Component {
           } = data;
 
           return (
-            <ThemeContext.Provider value={this.state.theme}>
-              <FontLoadedContext.Provider value={this.state.font400loaded}>
-                <ScreenWidthContext.Provider value={this.state.screenWidth}>
-                  <React.Fragment>
-                    <Header path={this.props.location.pathname} theme={this.state.theme} />
-                    <main>{children}</main>
-                    <Footer html={footnoteHTML} theme={this.state.theme} />
+            <ThemeContext.Provider value={theme}>
+              <React.Fragment>
+                <Header path={this.props.location.pathname} theme={theme} />
+                <main>{children}</main>
+                <Footer html={footnoteHTML} theme={theme} />
+                <style jsx>{`
+                  :global(body) {
+                    margin: 0;
+                  }
 
-                    {/* --- STYLES --- */}
-                    <style jsx>{`
-                      main {
-                        min-height: 80vh;
-                      }
-                    `}</style>
-                    <style jsx global>{`
-                      html {
-                        box-sizing: border-box;
-                      }
-                      *,
-                      *:after,
-                      *:before {
-                        box-sizing: inherit;
-                        margin: 0;
-                        padding: 0;
-                      }
-                      body {
-                        font-family: ${this.state.font400loaded
-                          ? "'Noto Sans KR', sans-serif;"
-                          : "Arial, sans-serif;"};
-                      }
-                      h1,
-                      h2,
-                      h3 {
-                        font-weight: ${this.state.font700loaded ? 700 : 400};
-                        line-height: 1.1;
-                        letter-spacing: -0.03em;
-                        margin: 0;
-                      }
-                      h1 {
-                        letter-spacing: -0.04em;
-                      }
-                      p {
-                        margin: 0;
-                      }
-                      strong {
-                        font-weight: ${this.state.font700loaded ? 700 : 400};
-                      }
-                      a {
-                        text-decoration: none;
-                        color: #666;
-                      }
-                      main {
-                        width: auto;
-                        display: block;
-                      }
-                    `}</style>
-                  </React.Fragment>
-                </ScreenWidthContext.Provider>
-              </FontLoadedContext.Provider>
+                  :global(h1),
+                  :global(h2),
+                  :global(h3) {
+                    margin: 1.5em 0 1em;
+                    word-break: keep-all;
+                    color: ${theme.text.color.primary};
+                  }
+                  :global(h2) {
+                    line-height: ${theme.font.lineHeight.s};
+                    font-size: ${theme.font.size.l};
+                  }
+                  :global(h3) {
+                    font-size: ${theme.font.size.m};
+                    line-height: ${theme.font.lineHeight.m};
+                  }
+                  :global(p) {
+                    font-size: ${theme.font.size.s};
+                    line-height: ${theme.font.lineHeight.xxl};
+                    margin: 0.25em 0 1em;
+                  }
+                  :global(ul) {
+                    list-style: circle;
+                    margin: 0 0 1.5em;
+                    padding: 0 0 0 1.5em;
+                  }
+                  :global(li) {
+                    font-size: ${theme.font.size.s};
+                    margin: 0.7em 0;
+                    line-height: 1.5;
+                  }
+                  :global(a) {
+                    color: ${theme.color.standard.link};
+                    text-decoration: none;
+                    border-bottom: 1px solid ${theme.color.standard.link};
+                  }
+                  :global(a:hover) {
+                    color: ${theme.color.standard.hover};
+                    border-bottom: 1px solid ${theme.color.standard.hover};
+                  }
+                  :global(a:visited) {
+                    color: ${theme.color.standard.visited};
+                    border-color: ${theme.color.standard.visited};
+                  }
+                  :global(a.gatsby-resp-image-link) {
+                    border: 0;
+                    display: block;
+                    margin: 2.5em 0;
+                    border-radius: ${theme.size.radius.default};
+                    overflow: hidden;
+                    border: 1px solid ${theme.line.color};
+                  }
+                  :global(code.language-text) {
+                    background: ${theme.color.neutral.gray.c};
+                    text-shadow: none;
+                    color: inherit;
+                    padding: 0.1em 0.3em 0.2em;
+                    border-radius: 0.1em;
+                  }
+                `}</style>
+              </React.Fragment>
             </ThemeContext.Provider>
           );
         }}

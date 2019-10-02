@@ -15,16 +15,6 @@ redirect_from:
 
 📅 사용중인 캘린더에 일정을 추가해 보세요. [ICS 파일 다운로드](./sprintseoul-2019-06.ics)
 
-<div title="캘린더에 일정 추가하기" class="addeventatc" style="visibility:hidden">
-  캘린더에 일정 추가하기
-  <span class="start">2019-06-29 10:00 AM</span>
-  <span class="end">2019-06-29 06:00 PM</span>
-  <span class="timezone">Asia/Seoul</span>
-  <span class="title">스프린트서울</span>
-  <span class="description">스프린트서울 6월 스프린트 모임</span>
-  <span class="location">서울시 강남구 테헤란로 127, 4층</span>
-</div>
-
 # 함께 해요!
 스프린트서울에서 6월 스프린트 모임을 준비 중입니다.
 
@@ -38,3 +28,58 @@ redirect_from:
 
 # 후원
 장소 후원: [스포카](https://www.spoqa.com/)
+
+# 스프린트 결과
+
+## CockroachDB
+  - https://github.com/cockroachdb/cockroach/pull/38573
+  - https://github.com/cockroachdb/cockroach/pull/38574
+
+## Libplanet
+  - https://github.com/planetarium/libplanet/pull/313
+  - https://github.com/planetarium/libplanet/pull/315
+  - https://github.com/planetarium/libplanet/pull/316
+  - https://github.com/planetarium/libplanet/pull/317
+  - https://github.com/planetarium/libplanet/pull/318
+  - https://github.com/planetarium/libplanet-explorer/pull/18
+  - https://github.com/planetarium/libplanet-explorer/pull/20
+  - https://github.com/planetarium/libplanet-explorer/pull/21
+  - https://github.com/planetarium/libplanet-explorer/pull/22
+
+## Ring
+  - https://github.com/youknowone/ring/pull/139
+  - https://github.com/youknowone/ring/pull/140
+  - https://github.com/youknowone/ring/pull/141
+
+## RustPython
+  - https://github.com/RustPython/RustPython/pull/1070
+  - https://github.com/RustPython/RustPython/pull/1071
+  - https://github.com/RustPython/RustPython/pull/1072
+  - https://github.com/RustPython/RustPython/pull/1073
+  - https://github.com/RustPython/RustPython/pull/1074
+  - https://github.com/RustPython/RustPython/pull/1076
+  - https://github.com/RustPython/RustPython/pull/1077
+  - https://github.com/RustPython/RustPython/pull/1078
+  - https://github.com/RustPython/RustPython/pull/1079
+  - https://github.com/RustPython/RustPython/pull/1080
+
+## Mocha
+  - https://github.com/mochajs/mocha/pull/3962
+  - https://github.com/mochajs/mocha/pull/3963
+
+## Just-news
+  - https://github.com/disjukr/just-news/pull/338
+  - https://github.com/disjukr/just-news/pull/340
+  - https://github.com/disjukr/just-news/pull/341
+  - https://github.com/disjukr/just-news/pull/343
+  - https://github.com/disjukr/just-news/pull/345
+  - https://github.com/disjukr/just-news/pull/346
+
+## Summernote
+  - https://github.com/summernote/summernote/pull/3285
+  - https://github.com/summernote/summernote/pull/3284
+
+## LibreOffice
+ - [tdf#126157 - Request for new Koreanic languages](https://bugs.documentfoundation.org/show_bug.cgi?id=126157)
+ - [LibreOffice Wiki Korean main page](https://wiki.documentfoundation.org/Main_Page/ko)
+ - Korean Translation - https://translations.documentfoundation.org/ko/

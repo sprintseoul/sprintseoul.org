@@ -15,16 +15,6 @@ redirect_from:
 
 📅 사용중인 캘린더에 일정을 추가해 보세요. [ICS 파일 다운로](./sprintseoul-2019-04.ics)
 
-<div title="캘린더에 일정 추가하기" class="addeventatc" style="visibility:hidden">
-  캘린더에 일정 추가하기
-  <span class="start">2019-04-20 10:00 AM</span>
-  <span class="end">2019-04-20 06:00 PM</span>
-  <span class="timezone">Asia/Seoul</span>
-  <span class="title">스프린트서울</span>
-  <span class="description">스프린트서울 4월 스프린트 모임</span>
-  <span class="location">서울시 강남구 테헤란로 325 어반벤치 빌딩 10층</span>
-</div>
-
 # 함께 해요!
 스프린트서울에서 4월 스프린트 모임을 준비 중입니다.
 
@@ -38,3 +28,32 @@ redirect_from:
 
 # 후원
 장소 후원: [리디(RIDI)](https://www.ridicorp.com/)
+
+# 스프린트 결과
+
+## Ring
+  - https://github.com/youknowone/ring/pull/111
+  - https://github.com/youknowone/ring/pull/114
+  - https://github.com/youknowone/ring/pull/117
+  - https://github.com/youknowone/ring/pull/119
+  - https://github.com/youknowone/ring/pull/121
+
+## Mattermost
+  - https://github.com/mattermost/mattermost-webapp/pull/2680
+  - https://github.com/mattermost/mattermost-webapp/pull/2679
+
+## Mocha
+  - https://github.com/mochajs/mocha/pull/3885
+  - https://github.com/mochajs/mocha/pull/3886
+  - https://github.com/mochajs/mocha/pull/3887
+  - https://github.com/mochajs/mocha/pull/3888
+
+## Just-news
+  - https://github.com/disjukr/just-news/pull/322
+  - https://github.com/disjukr/just-news/pull/325
+
+## Pandas
+  - https://github.com/pandas-dev/pandas/pull/26157
+  - https://github.com/pandas-dev/pandas/pull/26158
+  - https://github.com/pandas-dev/pandas/pull/26159
+

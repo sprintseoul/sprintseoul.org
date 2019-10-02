@@ -11,6 +11,9 @@ const Item = props => {
     sprint,
     sprint: {
       html,
+      frontmatter: {
+        title
+      },
       excerpt,
       fields: { slug }
     }
@@ -18,158 +21,18 @@ const Item = props => {
 
   return (
     <React.Fragment>
-      <li>
-        <Link to={slug} key={slug} className="link">
-          <Post post={sprint} theme={theme} showHeader={false} showFooter={false} />
-        </Link>
-      </li>
-
+      <Link to={slug} key={slug} className="link"><h1>{title}</h1></Link>
+      <Post post={sprint} theme={theme} showHeader={false} showFooter={false} />
       {/* --- STYLES --- */}
       <style jsx>{`
-        :global(.link) {
-          width: 100%;
-          color: ${theme.text.color.primary};
-        }
-
-        li {
-          border: 1px solid transparent;
-          border-radius: ${theme.size.radius.default};
-          margin: ${`calc(${theme.space.default} * 2) 0 calc(${theme.space.default} * 3)`};
-          padding: ${theme.space.inset.s};
-          position: relative;
-          transition: all ${theme.time.duration.default};
-          background: transparent;
-
-          &::after {
-            border-top: 1px solid ${theme.line.color};
-            content: "";
-            height: 0;
-            position: absolute;
-            bottom: ${`calc(${theme.space.default} * -1.5)`};
-            left: 50%;
-            transform: translateX(-50%);
-            transition: all ${theme.time.duration.default};
-            width: 50%;
-          }
-
-          &:first-child {
-            &::before {
-              border-top: 1px solid ${theme.line.color};
-              content: "";
-              height: 0;
-              position: absolute;
-              top: ${`calc(${theme.space.default} * -1.5)`};
-              left: 50%;
-              transform: translateX(-50%);
-              transition: all ${theme.time.duration.default};
-              width: 50%;
-            }
-          }
+        .main {
+          padding: 0 ${theme.space.inset.default};
         }
 
         h1 {
-          padding: ${theme.space.m} ${theme.space.s} 0;
-          line-height: ${theme.blog.h1.lineHeight};
-          font-size: ${theme.blog.h1.size};
-          text-remove-gap: both;
-        }
-
-        .meta {
-          display: flex;
-          flex-flow: row wrap;
-          font-size: 0.8em;
-          padding: ${theme.space.m} ${theme.space.s};
-          background: transparent;
-
-          :global(svg) {
-            fill: ${theme.icon.color};
-            margin: ${theme.space.inline.xs};
-          }
-          span {
-            align-items: center;
-            display: flex;
-            text-transform: uppercase;
-            margin: ${theme.space.xs} ${theme.space.s} ${theme.space.xs} 0;
-          }
-        }
-
-        p {
-          line-height: 1.5;
-          padding: 0 ${theme.space.s};
-          text-remove-gap: both;
-        }
-
-        @from-width tablet {
-          li {
-            margin: ${`calc(${theme.space.default} * 3) 0 calc(${theme.space.default} * 4)`};
-            padding: ${theme.space.default};
-
-            &::after {
-              bottom: ${`calc(${theme.space.default} * -2)`};
-            }
-
-            &:first-child {
-              &::before {
-                top: ${`calc(${theme.space.default} * -1.75)`};
-              }
-            }
-          }
-
-          h1 {
-            font-size: ${`calc(${theme.blog.h1.size} * 1.2)`};
-            padding: ${`calc(${theme.space.default} * 1.5) ${theme.space.default} 0`};
-            transition: all 0.5s;
-          }
-          .meta {
-            padding: ${`calc(${theme.space.m} * 1.5) ${theme.space.m}`};
-          }
-          p {
-            padding: 0 ${theme.space.default};
-          }
-        }
-        @from-width desktop {
-          li {
-            margin: ${`calc(${theme.space.default} * 4) 0 calc(${theme.space.default} * 5)`};
-            padding: 0 0 ${`calc(${theme.space.default} * 2)`};
-
-            &::after {
-              bottom: ${`calc(${theme.space.default} * -1.5)`};
-            }
-
-            &:first-child {
-              &::before {
-                top: ${`calc(${theme.space.default} * -2.75)`};
-              }
-            }
-          }
-
-          :global(.blogItemLink:first-child) > li::before {
-            top: ${`calc(${theme.space.default} * -2.75)`};
-          }
-          h1 {
-            font-size: 2.5em;
-            padding: ${`calc(${theme.space.default} * 1.2) calc(${theme.space.default} * 2) 0`};
-          }
-          .meta {
-            padding: ${`calc(${theme.space.default} * 1.5) calc(${theme.space.default} * 2)
-              calc(${theme.space.default} * 0.5)`};
-          }
-          p {
-            padding: ${`0 calc(${theme.space.default} * 2)`};
-          }
-          li {
-            &:hover {
-              border: 1px solid ${theme.line.color};
-              box-shadow: 0px 3px 2px rgba(0, 0, 0, 0.03);
-
-              &:after {
-                bottom: ${`calc(${theme.space.default} * -2.5)`};
-              }
-              h1 {
-                color: ${theme.blog.h1.hoverColor};
-              }
-            }
-          }
+          font-size: ${theme.font.size.xxl};
+          margin: 0 auto;
+          padding: ${`calc(${theme.space.default} * 2) 0 calc(${theme.space.default} * 0.5)`};
         }
       `}</style>
     </React.Fragment>

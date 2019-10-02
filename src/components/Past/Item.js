@@ -75,6 +75,7 @@ const Item = props => {
         }
 
         h1 {
+          margin: ${theme.space.m};
           padding: ${theme.space.m} ${theme.space.s} 0;
           line-height: ${theme.blog.h1.lineHeight};
           font-size: ${theme.blog.h1.size};

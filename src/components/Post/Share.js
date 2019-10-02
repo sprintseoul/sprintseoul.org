@@ -77,6 +77,7 @@ const PostShare = props => {
           flex-direction: column;
           justify-content: center;
           align-items: center;
+          margin: ${theme.space.inset.l};
         }
 
         .links {
@@ -97,7 +98,6 @@ const PostShare = props => {
         @from-width tablet {
           .share {
             flex-direction: row;
-            margin: ${theme.space.inset.l};
           }
           .label {
             margin: ${theme.space.inline.m};

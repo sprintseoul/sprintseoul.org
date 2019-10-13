@@ -3,9 +3,9 @@ module.exports = {
   shortSiteTitle: "SprintSeoul", // <title> ending for posts and pages
   siteDescription:
     "오픈소스 프로젝트의 작성자 또는 기여자와 함께 짧은 시간 동안 함께 문제를 찾고 해결하며, 해당 오픈소스 프로젝트에 대해 보다 깊게 알아가는 행사입니다.",
-  siteUrl: "https://sprintseoul.org",
+  siteUrl: "https://www.sprintseoul.org",
   pathPrefix: "",
-  siteImage: "https://sprintseoul.org/sprintseoul.jpg",
+  siteImage: "https://www.sprintseoul.org/sprintseoul.jpg",
   siteLanguage: "ko",
 
   /* author */

@@ -96,7 +96,17 @@ exports.createPages = ({ graphql, actions }) => {
         });
 
         // Create sprints
-        const sprints = items.filter(item => item.node.fields.source === "sprints");
+        const sprints = items
+          .filter(item => item.node.fields.source === "sprints")
+          .sort((a, b) => {
+            if (a.node.fields.slug > b.node.fields.slug) {
+              return 1;
+            }
+            if (a.node.fields.slug < b.node.fields.slug) {
+              return -1;
+            }
+            return 0;
+          });
         sprints.forEach(({ node }, index) => {
           const slug = node.fields.slug;
           const next = index === 0 ? undefined : sprints[index - 1].node;

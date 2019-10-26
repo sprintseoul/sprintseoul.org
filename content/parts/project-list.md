@@ -4,7 +4,7 @@ title: project
 
 # 어떤 오픈소스의 스프린트를 진행하나요?
 
-더 다양하고 많은 오픈소스 프로젝트와 함께하려고 합니다. 스프린트 리더를 항시 모집하고 있으니, 
+더 다양하고 많은 오픈소스 프로젝트와 함께하려고 합니다. 스프린트 리더를 항시 모집하고 있으니,
 새로운 프로젝트 기여자를 찾는 분들의 많은 참여 부탁드립니다.
 
 [✍️ 스프린트 리더/프로젝트 등록 (구글 폼)](https://goo.gl/forms/z8zouInWfCt9Qd6X2)
@@ -25,20 +25,16 @@ title: project
   <span>Python</span>
 
   Comprehensive Markdown plugin built for Django
-  
+
 * **[django-summernote](https://github.com/summernote/django-summernote)**
   <span>Python</span>
 
   Simply integrate Summernote editor with Django project.
 
-* **[Gitcoin](https://gitcoin.co/)**
-
-  깃코인은 보상을 받으며 오픈소스 기여를 할 수 있게 해주는 이더리움 앱입니다.
-
 * **[just-news](https://github.com/disjukr/just-news)**
   <span>TypeScript</span>
 
-  뉴스 사이트 기사 페이지에 접속하면 뉴스 본문외의 정보를 전부 제거한 뒤 페이지를 재구성하는 스크립트입니다. 
+  뉴스 사이트 기사 페이지에 접속하면 뉴스 본문외의 정보를 전부 제거한 뒤 페이지를 재구성하는 스크립트입니다.
 
 * **[Libplanet](https://libplanet.io/)**
   <span>C#</span>
@@ -72,7 +68,7 @@ title: project
 * **[pip](https://pip.pypa.io/)**
   <span>Python</span>
 
-  The Python Package Installer (recommended by PyPA)]  
+  The Python Package Installer (recommended by PyPA)]
 
 * **[Ring](https://github.com/youknowone/ring)**
   <span>Python</span>
@@ -80,7 +76,7 @@ title: project
   매우 진보한 파이썬 캐시 인터페이스
 
   - Ring을 만들려는 참가자와 Ring을 사용하려는 참가자 모두 환영합니다.
-  - 파이썬 3.5 이상을 준비해주세요.     
+  - 파이썬 3.5 이상을 준비해주세요.
 
 * **[RustPython](https://github.com/RustPython/RustPython)**
   <span>Python</span><span>Rust</span>
@@ -89,7 +85,7 @@ title: project
 
   - 필수: rustup으로 Rust stable(1.34) 설치 및 어떤 방법으로든 CPython 3.6 이상 설치
   - 권장: Visual Studio Code와 Rust(rls) 확장 설치 및 프로젝트 빌드 해보기. CPython 3.6 이상의 소스 코드 로컬에 받아두기.
-  
+
 * **[Summernote](https://summernote.org)**
   <span>JavaScript</span>
 

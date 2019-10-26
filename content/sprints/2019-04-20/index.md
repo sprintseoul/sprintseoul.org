@@ -31,29 +31,4 @@ redirect_from:
 
 # 스프린트 결과
 
-## Ring
-  - https://github.com/youknowone/ring/pull/111
-  - https://github.com/youknowone/ring/pull/114
-  - https://github.com/youknowone/ring/pull/117
-  - https://github.com/youknowone/ring/pull/119
-  - https://github.com/youknowone/ring/pull/121
-
-## Mattermost
-  - https://github.com/mattermost/mattermost-webapp/pull/2680
-  - https://github.com/mattermost/mattermost-webapp/pull/2679
-
-## Mocha
-  - https://github.com/mochajs/mocha/pull/3885
-  - https://github.com/mochajs/mocha/pull/3886
-  - https://github.com/mochajs/mocha/pull/3887
-  - https://github.com/mochajs/mocha/pull/3888
-
-## Just-news
-  - https://github.com/disjukr/just-news/pull/322
-  - https://github.com/disjukr/just-news/pull/325
-
-## Pandas
-  - https://github.com/pandas-dev/pandas/pull/26157
-  - https://github.com/pandas-dev/pandas/pull/26158
-  - https://github.com/pandas-dev/pandas/pull/26159
-
+<https://github.com/sprintseoul/history/blob/master/201904.md>

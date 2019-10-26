@@ -13,33 +13,7 @@ redirect_from:
 
 # 스프린트 결과
 
-## Pandas
-- https://github.com/pandas-dev/pandas/issues/25336 (WIP)
-- https://github.com/pandas-dev/pandas/issues/25271 (Closed)
-
-## Django
-- https://github.com/django/django/pull/10998
-- https://github.com/django/django/pull/10999
-
-## django-summernote
-- https://github.com/summernote/django-summernote/issues/346
-- https://github.com/summernote/django-summernote/issues/337
-
-## django-markdownx
-- https://github.com/neutronX/django-markdownx/pull/148
-- https://github.com/neutronX/django-markdownx/pull/149
-- https://github.com/neutronX/django-markdownx/pull/150
-
-## mocha
-- https://github.com/mochajs/mocha/pull/3733
-- https://github.com/mochajs/mocha/pull/3734
-- https://github.com/mochajs/mocha/pull/3735
-
-## mocha-docdash
-- https://github.com/mochajs/mocha-docdash/pull/2
-
-## JSDoc
-- https://github.com/jsdoc3/jsdoc/pull/1617
+<https://github.com/sprintseoul/history/blob/master/201902.md>
 
 아래 프로젝트는 사정상 진행하지 못했습니다.
 - PyGame

@@ -13,10 +13,4 @@ redirect_from:
 
 # 스프린트 결과
 
-## Django
-- https://github.com/django/django/pull/10756
-- https://github.com/django/django/pull/10757
-- https://github.com/django/django/pull/10758
-
-## Pandas
-- https://github.com/pandas-dev/pandas/issues/24233
+<https://github.com/sprintseoul/history/blob/master/201812.md>

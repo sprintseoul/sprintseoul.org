@@ -29,3 +29,6 @@ redirect_from:
 # 후원
 장소 후원: [스타일쉐어](https://about.styleshare.kr)
 
+# 스프린트 결과
+
+<https://github.com/sprintseoul/history/blob/master/201910.md>

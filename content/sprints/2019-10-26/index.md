@@ -1,6 +1,6 @@
 ---
 title: 2019년 10월 스프린트 모임
-category: "upcoming"
+category: "past"
 redirect_from:
     - /201910/
     - /201910

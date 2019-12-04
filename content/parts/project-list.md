@@ -31,6 +31,11 @@ title: project
 
   Simply integrate Summernote editor with Django project.
 
+* **[구름입력기](https://gureum.io/)**
+  <span>Swift</span>
+
+  macOS를 위한 새로운 한글 입력기
+
 * **[just-news](https://github.com/disjukr/just-news)**
   <span>TypeScript</span>
 

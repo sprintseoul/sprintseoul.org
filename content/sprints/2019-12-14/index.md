@@ -1,6 +1,6 @@
 ---
 title: 2019년 12월 스프린트 모임
-category: "upcoming"
+category: "past"
 redirect_from:
     - /201912/
     - /201912
@@ -29,3 +29,6 @@ redirect_from:
 # 후원
 장소 후원: [지그재그(크로키닷컴)](https://zigzag.kr/)
 
+# 스프린트 결과
+
+<https://github.com/sprintseoul/history/blob/master/201912.md>

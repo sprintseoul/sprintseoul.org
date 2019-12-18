@@ -32,3 +32,4 @@ redirect_from:
 # 스프린트 결과
 
 <https://github.com/sprintseoul/history/blob/master/201912.md>
+- [행사 사진](https://twitter.com/sprintseoul/status/1205845206420967425)

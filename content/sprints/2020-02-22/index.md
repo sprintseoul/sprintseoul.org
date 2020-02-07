@@ -16,7 +16,7 @@ redirect_from:
 # 함께 해요!
 
 **2월 17일, 월요일 신청 마감!**
-[✍️ 스프린트 참가 신청 (구글 폼)](https://forms.gle/eQBjxReXwekoQukU7)
+[✍️ 스프린트 참가 신청 (구글 폼)](https://forms.gle/iH9WeWDiCLSziuDw6)
 
 참가 신청해주신 분들 중, 참가가 확정된 분들에게 이메일을 통해 참가 안내와 접속 주소를 보내드립니다.
 

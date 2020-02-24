@@ -1,6 +1,6 @@
 ---
 title: 2020년 2월 스프린트 모임
-category: "upcoming"
+category: "past"
 redirect_from:
     - /202002/
     - /202002
@@ -23,4 +23,6 @@ redirect_from:
 
 # 스프린트 결과
 
-준비중입니다.
+<https://github.com/sprintseoul/history/blob/master/202002.md>
+
+- [행사 사진](https://twitter.com/sprintseoul/status/1231054512401473536)

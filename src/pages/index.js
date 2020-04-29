@@ -138,7 +138,7 @@ export const query = graphql`
       }
     }
     background: imageSharp(fluid: { originalName: { regex: "/hero-background/" } }) {
-      resize(width: 1200, quality: 60, cropFocus: CENTER) {
+      resize(width: 1920, quality: 90, cropFocus: CENTER) {
         src
       }
     }

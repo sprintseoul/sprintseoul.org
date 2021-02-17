@@ -4,8 +4,6 @@ import {
   FacebookShareButton,
   LinkedinShareButton,
   TwitterShareButton,
-  FacebookShareCount,
-  LinkedinShareCount,
   FacebookIcon,
   TwitterIcon,
   LinkedinIcon
@@ -26,7 +24,6 @@ const PostShare = props => {
   const url = config.siteUrl + config.pathPrefix + slug;
 
   const iconSize = 36;
-  const filter = count => (count > 0 ? count : "");
 
   return (
     <React.Fragment>
@@ -36,36 +33,21 @@ const PostShare = props => {
           <TwitterShareButton
             url={url}
             title={title}
-            additionalProps={{
-              "aria-label": "Twitter share"
-            }}
           >
             <TwitterIcon round size={iconSize} />
           </TwitterShareButton>
           <FacebookShareButton
             url={url}
             quote={`${title} - ${excerpt}`}
-            additionalProps={{
-              "aria-label": "Facebook share"
-            }}
           >
             <FacebookIcon round size={iconSize} />
-            <FacebookShareCount url={url}>
-              {count => <div className="share-count">{filter(count)}</div>}
-            </FacebookShareCount>
           </FacebookShareButton>
           <LinkedinShareButton
             url={url}
             title={title}
             description={excerpt}
-            additionalProps={{
-              "aria-label": "LinkedIn share"
-            }}
           >
             <LinkedinIcon round size={iconSize} />
-            <LinkedinShareCount url={url}>
-              {count => <div className="share-count">{filter(count)}</div>}
-            </LinkedinShareCount>
           </LinkedinShareButton>
         </div>
       </div>

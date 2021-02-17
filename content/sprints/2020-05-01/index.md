@@ -1,6 +1,6 @@
 ---
 title: 2020년 5월 스프린트 이벤트
-category: "upcoming"
+category: "past"
 redirect_from:
     - /202005/
     - /202005
@@ -21,4 +21,6 @@ redirect_from:
 
 5월 내에 약속한 기여를 달성한 분들 중, 추첨을 통해 스프린트서울 운영진이 준비한 소정의 상품을 보내드릴 예정입니다.
 
-----
+# 스프린트 결과
+
+<https://github.com/sprintseoul/history/blob/master/202005.md>

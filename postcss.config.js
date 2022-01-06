@@ -11,7 +11,7 @@ module.exports = ctx => ({
       defaultLineHeight: "0"
     },
     "postcss-nested": {},
-    "postcss-cssnext": {}
+    "postcss-preset-env": {}
   }
 });
 

@@ -11,7 +11,6 @@ const Guide = props => {
     <React.Fragment>
       <main className="main">
         <Bodytext html={guide} theme={theme} />
-        <Projects projects={projectList} theme={theme} />
       </main>
 
       {/* --- STYLES --- */}

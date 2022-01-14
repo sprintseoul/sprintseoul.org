@@ -39,9 +39,15 @@ redirect_from:
    - 러스트로 작성된 코드를 웹 어셈블리를 통해 웹 브라우저를 통해 바로 실행시켜 레고 캐드 표준인 LDraw 모델을 조작하고 표현합니다.
    - Rust, WebAssembly
 
- - **LibPlanet**: <https://github.com/planetarium/libplanet>
+ - **Libplanet** & **Nine Chronicles**: <https://github.com/planetarium>
    - 플라네타리움은 게임의 생명주기와 수익 모델을 혁신하려는 오픈 소스 블록체인 플랫폼입니다.
-   - C#
+   - [Libplanet](https://github.com/planetarium/libplanet)
+     - 립플래닛은 중앙 서버 없이 P2P 네트워크와 블록체인으로 온라인 멀티플레이어 게임을 만들 수 있게 해주는 .NET 라이브러리입니다.
+     - C#
+   - [Nine Chronicles](https://github.com/planetarium/9c-launcher)
+     - 〈나인 크로니클〉은 립플래닛을 이용해 아트부터 코드까지 전부 오픈 소스로 만들어진 게임입니다.
+       이번 스프린트에서는 Electron + React + GraphQL 기반의 게임 론처 부분 작업을 주로 진행합니다.
+     - TypeScript
 
  - **RustPython**: <https://github.com/RustPython/RustPython>
    - Rust로 파이썬3.9를 구현하는 프로젝트입니다.
